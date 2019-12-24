@@ -230,7 +230,9 @@ public class TouchDrawActivity extends Activity {
                 if (mPaint != null && position >= 0 && position < STROKE_COLOUR_VALUES.length) {
                     mPaint.setColor(STROKE_COLOUR_VALUES[position]);
 
-                    adapterView.setBackgroundColor(STROKE_COLOUR_VALUES[position]);
+                    adapterView.setBackgroundColor(Color.parseColor("#1F3F65"));
+                    adapterView.setTextColor(Color.parseColor("#FFFFFF"));
+                   // adapterView.setBackgroundColor(STROKE_COLOUR_VALUES[position]);
                     ((TextView) view).setText(strokeColourLabelPrefix + STROKE_COLOUR_LABELS[position]);
                 }
             }
