@@ -147,7 +147,7 @@ public class TouchDrawActivity extends Activity {
         Button doneButton = new Button(this);
         doneButton.setText("Klaar");
         doneButton.setBackgroundColor(Color.parseColor("#1F3F65"));
-        doneButton.setTextColor(Color.parseColor("#209A44"));
+        doneButton.setTextColor(Color.parseColor("#FFFFFF"));
         doneButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
         doneButton.setOnClickListener(new View.OnClickListener() {
@@ -159,7 +159,8 @@ public class TouchDrawActivity extends Activity {
 
         Button eraseButton = new Button(this);
         eraseButton.setText("Wissen");
-        eraseButton.setBackgroundColor(Color.parseColor("#F1F1F1"));
+        eraseButton.setBackgroundColor(Color.parseColor("#1F3F65"));
+        eraseButton.setTextColor(Color.parseColor("#FFFFFF"));
         eraseButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
         eraseButton.setOnClickListener(new View.OnClickListener() {
@@ -171,7 +172,8 @@ public class TouchDrawActivity extends Activity {
 
         Button cancelButton = new Button(this);
         cancelButton.setText("Annuleren");
-        cancelButton.setBackgroundColor(Color.parseColor("#FF0000"));
+        cancelButton.setBackgroundColor(Color.parseColor("#1F3F65"));
+        cancelButton.setTextColor(Color.parseColor("#FFFFFF"));
         cancelButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
         cancelButton.setOnClickListener(new View.OnClickListener() {
