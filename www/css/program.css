@@ -91,9 +91,9 @@ canvas.surface
 }
 
 #Black {color: Black;}
-#Blue  {color: Blue; }
-#Red   {color: Red;  }
-#Green {color: Green;}
+#Blue  {color: #1F3F65; }
+#Red   {color: #FF0000;  }
+#Green {color: #209A44;}
 #Yellow {color: Yellow;}
 
 #Aqua   {background-color: Aqua;  }
