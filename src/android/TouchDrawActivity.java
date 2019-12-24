@@ -62,8 +62,8 @@ public class TouchDrawActivity extends Activity {
     // Labels and values for stroke colour and width selection buttons
     private static final String[] STROKE_COLOUR_LABELS = {"RED", "BLUE", "GREEN", "BLACK"};
     private static final int[] STROKE_COLOUR_VALUES = {Color.RED, Color.BLUE, Color.GREEN, Color.BLACK};
-    private static final String[] STROKE_WIDTH_LABELS = {"8x"};
-    private static final Integer[] STROKE_WIDTH_VALUES = {32};
+    private static final String[] STROKE_WIDTH_LABELS = {"0.5x", "1x", "2x", "8x"};
+    private static final Integer[] STROKE_WIDTH_VALUES = {2, 4, 8, 32};
 
     public enum BackgroundImageType {
         DATA_URL,
