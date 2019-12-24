@@ -54,14 +54,14 @@ public class TouchDrawActivity extends Activity {
     private Bitmap mBitmap;
     private TouchDrawView mTdView;
     private BackgroundImageType mBackgroundImageType = BackgroundImageType.COLOUR;
-    private String mBackgroundColor = "#FFFFFF";
+    private String mBackgroundColor = "#E9F5FF";
     private String mBackgroundImageUrl = "";
     private Bitmap.CompressFormat mEncodingType = Bitmap.CompressFormat.PNG;
     private int a, r, g, b; //Decoded ARGB color values for the background and erasing
 
     // Labels and values for stroke colour and width selection buttons
     private static final String[] STROKE_COLOUR_LABELS = {"Rood", "Blauw", "Groen", "Zwart"};
-    private static final int[] STROKE_COLOUR_VALUES = {Color.parseColor("#636161"), Color.BLUE, Color.GREEN, Color.BLACK};
+    private static final int[] STROKE_COLOUR_VALUES = {Color.parseColor("#FF0000"), Color.parseColor("#1F3F65"), Color.parseColor("#209A44"), Color.parseColor("#241C15")};
     private static final String[] STROKE_WIDTH_LABELS = {"0.5x", "1x", "2x", "8x"};
     private static final Integer[] STROKE_WIDTH_VALUES = {2, 4, 8, 32};
 
@@ -146,7 +146,7 @@ public class TouchDrawActivity extends Activity {
 
         Button doneButton = new Button(this);
         doneButton.setText("Klaar");
-        doneButton.setBackgroundColor(Color.GREEN);
+        doneButton.setBackgroundColor(Color.parseColor("#209A44"));
         doneButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
         doneButton.setOnClickListener(new View.OnClickListener() {
@@ -158,7 +158,7 @@ public class TouchDrawActivity extends Activity {
 
         Button eraseButton = new Button(this);
         eraseButton.setText("Wissen");
-        eraseButton.setBackgroundColor(Color.GRAY);
+        eraseButton.setBackgroundColor(Color.parseColor("#F1F1F1"));
         eraseButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
         eraseButton.setOnClickListener(new View.OnClickListener() {
@@ -170,7 +170,7 @@ public class TouchDrawActivity extends Activity {
 
         Button cancelButton = new Button(this);
         cancelButton.setText("Annuleren");
-        cancelButton.setBackgroundColor(Color.RED);
+        cancelButton.setBackgroundColor(Color.parseColor("#FF0000"));
         cancelButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
         cancelButton.setOnClickListener(new View.OnClickListener() {
