@@ -169,7 +169,7 @@ public class TouchDrawActivity extends Activity {
         });
 
         Button cancelButton = new Button(this);
-        cancelButton.setText("Cancel");
+        cancelButton.setText("Annuleren");
         cancelButton.setBackgroundColor(Color.RED);
         cancelButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));

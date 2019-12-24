@@ -27,7 +27,7 @@ if(navigator.sketch != null && navigator.sketch != undefined){
   '                                    {id:\'Clear\', label:\'Clear\', icon:\'clear\', onclick:clear},'+
   '                                    {type:\'separator\',id:\'sep\'},'+
   '                                    {id:\'Done\', label:\'Done\', icon:\'accept\', onclick:done},'+
-  '                                    {id:\'Cancel\', label:\'Cancel\', icon:\'cancel\', onclick:cancel}]}">'+
+  '                                    {id:\'Cancel\', label:\'Annuleren\', icon:\'cancel\', onclick:cancel}]}">'+
   '  </div>'+
   '<div id="InkColorFlyout" data-win-control="WinJS.UI.Menu"'+
   '        data-win-options="{commands:[{id:\'Black\',label:\'Black\',onclick:inkColor},'+
