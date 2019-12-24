@@ -49,7 +49,7 @@ public class TouchDrawActivity extends Activity {
     public static final String DRAWING_RESULT_ENCODING_TYPE = "drawing_encoding_type";
 
     private Paint mPaint;
-    private int mStrokeWidth = 4;
+    private int mStrokeWidth = 8;
     private int mScale = 35;
     private Bitmap mBitmap;
     private TouchDrawView mTdView;
@@ -62,8 +62,8 @@ public class TouchDrawActivity extends Activity {
     // Labels and values for stroke colour and width selection buttons
     private static final String[] STROKE_COLOUR_LABELS = {"Rood", "Blauw", "Groen", "Zwart"};
     private static final int[] STROKE_COLOUR_VALUES = {Color.parseColor("#FF0000"), Color.parseColor("#1F3F65"), Color.parseColor("#209A44"), Color.parseColor("#241C15")};
-    private static final String[] STROKE_WIDTH_LABELS = {"0.5x", "1x", "2x", "8x"};
-    private static final Integer[] STROKE_WIDTH_VALUES = {2, 4, 8, 32};
+    private static final String[] STROKE_WIDTH_LABELS = {"1x", "2x", "8x"};
+    private static final Integer[] STROKE_WIDTH_VALUES = {4, 8, 32};
 
     public enum BackgroundImageType {
         DATA_URL,
