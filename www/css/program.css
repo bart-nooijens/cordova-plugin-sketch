@@ -1,6 +1,4 @@
-﻿
-
-*
+﻿*
 {
     overflow: hidden;
     -ms-content-zooming: none;
@@ -43,13 +41,13 @@ canvas.surface
 
 #HighlightCanvas
 {
-    background-color: White;
+    background-color: #E9F5FF;
     z-index: 1;
 }
 
 #InkCanvas
 {
-    background-color: White;
+    background-color: #E9F5FF;
     z-index: 2;
 }
 
