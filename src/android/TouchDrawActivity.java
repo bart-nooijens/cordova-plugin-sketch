@@ -145,7 +145,7 @@ public class TouchDrawActivity extends Activity {
         LinearLayout buttonBar = new LinearLayout(this);
 
         Button doneButton = new Button(this);
-        doneButton.setText("Done");
+        doneButton.setText("Klaar");
         doneButton.setBackgroundColor(Color.GREEN);
         doneButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
@@ -157,7 +157,7 @@ public class TouchDrawActivity extends Activity {
         });
 
         Button eraseButton = new Button(this);
-        eraseButton.setText("Erase");
+        eraseButton.setText("Wissen");
         eraseButton.setBackgroundColor(Color.GRAY);
         eraseButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
@@ -198,7 +198,7 @@ public class TouchDrawActivity extends Activity {
     }
 
     public Spinner createColourSpinner() {
-        final String strokeColourLabelPrefix = "COLOUR: ";
+        final String strokeColourLabelPrefix = "Kleur: ";
         Spinner spinner = new Spinner(this);
 
         ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this,
