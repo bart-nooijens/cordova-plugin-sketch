@@ -60,8 +60,8 @@ public class TouchDrawActivity extends Activity {
     private int a, r, g, b; //Decoded ARGB color values for the background and erasing
 
     // Labels and values for stroke colour and width selection buttons
-    private static final String[] STROKE_COLOUR_LABELS = {"RED", "BLUE", "GREEN", "BLACK"};
-    private static final int[] STROKE_COLOUR_VALUES = {Color.RED, Color.BLUE, Color.GREEN, Color.BLACK};
+    private static final String[] STROKE_COLOUR_LABELS = {"Rood", "Blauw", "Groen", "Zwart"};
+    private static final int[] STROKE_COLOUR_VALUES = {Color.parseColor("#636161"), Color.BLUE, Color.GREEN, Color.BLACK};
     private static final String[] STROKE_WIDTH_LABELS = {"0.5x", "1x", "2x", "8x"};
     private static final Integer[] STROKE_WIDTH_VALUES = {2, 4, 8, 32};
 
@@ -207,7 +207,7 @@ public class TouchDrawActivity extends Activity {
             public View getView(int position, View convertView, ViewGroup parent) {
                 TextView v = (TextView) super.getView(position, convertView, parent);
 
-                v.setText(strokeColourLabelPrefix + "BLUE");
+                v.setText(strokeColourLabelPrefix + "Blauw");
                 return v;
             }
 
@@ -247,7 +247,7 @@ public class TouchDrawActivity extends Activity {
     }
 
     public Spinner createWidthSpinner() {
-        final String strokeWidthLabelPrefix = "WIDTH: ";
+        final String strokeWidthLabelPrefix = "Breedte: ";
         Spinner spinner = new Spinner(this);
 
         final ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this,
