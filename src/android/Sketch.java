@@ -113,7 +113,7 @@ public class Sketch extends CordovaPlugin {
 
                 touchDrawIntent.putExtra(TouchDrawActivity.BACKGROUND_IMAGE_TYPE,
                         TouchDrawActivity.BackgroundImageType.COLOUR.ordinal());
-                touchDrawIntent.putExtra(TouchDrawActivity.BACKGROUND_COLOUR, "#FFFFFF");
+                touchDrawIntent.putExtra(TouchDrawActivity.BACKGROUND_COLOUR, "#E9F5FF");
 
                 if (Sketch.this.encodingType == EncodingType.PNG) {
                     touchDrawIntent.putExtra(TouchDrawActivity.DRAWING_RESULT_ENCODING_TYPE,
