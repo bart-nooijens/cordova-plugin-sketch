@@ -146,7 +146,8 @@ public class TouchDrawActivity extends Activity {
 
         Button doneButton = new Button(this);
         doneButton.setText("Klaar");
-        doneButton.setBackgroundColor(Color.parseColor("#209A44"));
+        doneButton.setBackgroundColor(Color.parseColor("#1F3F65"));
+        doneButton.setTextColor(Color.parseColor("#209A44"));
         doneButton.setLayoutParams(new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
         doneButton.setOnClickListener(new View.OnClickListener() {
