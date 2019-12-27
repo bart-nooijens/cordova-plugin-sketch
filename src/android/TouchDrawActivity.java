@@ -238,7 +238,6 @@ public class TouchDrawActivity extends Activity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        spinner.setBackgroundColor(Color.BLUE);
 
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30);
