@@ -204,6 +204,8 @@ public class TouchDrawActivity extends Activity {
         final String strokeColourLabelPrefix = "Lijnkleur: ";
         Spinner spinner = new Spinner(this);
 
+        spinner.setTextColor(Color.parseColor("#1F3F65"));
+
         ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this,
                 android.R.layout.simple_spinner_dropdown_item, STROKE_COLOUR_LABELS) {
             @Override
@@ -243,7 +245,6 @@ public class TouchDrawActivity extends Activity {
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30);
         spinner.setLayoutParams(layoutParams);
         spinner.setSelection(Arrays.asList(STROKE_COLOUR_LABELS).indexOf("BLUE"));
-        spinner.setTextColor(Color.parseColor("#1F3F65"));
 
         return spinner;
     }
