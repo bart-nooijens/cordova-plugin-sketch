@@ -243,6 +243,7 @@ public class TouchDrawActivity extends Activity {
                 0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30);
         spinner.setLayoutParams(layoutParams);
         spinner.setSelection(Arrays.asList(STROKE_COLOUR_LABELS).indexOf("BLUE"));
+        spinner.setTextColor(Color.parseColor("#1F3F65"));
 
         return spinner;
     }
