@@ -201,7 +201,7 @@ public class TouchDrawActivity extends Activity {
     }
 
     public Spinner createColourSpinner() {
-        final String strokeColourLabelPrefix = "Kleur: ";
+        final String strokeColourLabelPrefix = "Lijnkleur: ";
         Spinner spinner = new Spinner(this);
 
         ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this,
