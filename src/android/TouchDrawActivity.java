@@ -170,23 +170,9 @@ public class TouchDrawActivity extends Activity {
             }
         });
 
-        Button cancelButton = new Button(this);
-        cancelButton.setText("Annuleren");
-        cancelButton.setBackgroundColor(Color.parseColor("#1F3F65"));
-        cancelButton.setTextColor(Color.parseColor("#FFFFFF"));
-        cancelButton.setLayoutParams(new LinearLayout.LayoutParams(
-                0, ViewGroup.LayoutParams.MATCH_PARENT, (float) 0.30));
-        cancelButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
-                v.setPressed(true);
-                cancelDrawing();
-            }
-        });
-
         buttonBar.addView(doneButton);
         buttonBar.addView(eraseButton);
-        buttonBar.addView(cancelButton);
+
 
         return buttonBar;
     }
@@ -326,13 +312,6 @@ public class TouchDrawActivity extends Activity {
         mTdView.invalidate();
     }
 
-    public void cancelDrawing() {
-        Intent drawingResult = new Intent();
-
-        setResult(Activity.RESULT_CANCELED, drawingResult);
-        finish();
-    }
-
     public Bitmap scaleBitmap(Bitmap bitmap) {
         int origWidth = bitmap.getWidth();
         int origHeight = bitmap.getHeight();
@@ -350,7 +329,7 @@ public class TouchDrawActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        cancelDrawing();
+
         super.onBackPressed();
     }
 
