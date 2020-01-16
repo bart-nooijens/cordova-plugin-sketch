@@ -56,7 +56,7 @@ public class TouchDrawActivity extends Activity {
     private BackgroundImageType mBackgroundImageType = BackgroundImageType.COLOUR;
     private String mBackgroundColor = "#E9F5FF";
     private String mBackgroundImageUrl = "";
-    private Bitmap.CompressFormat mEncodingType = Bitmap.CompressFormat.PNG;
+    private Bitmap.CompressFormat mEncodingType = Bitmap.CompressFormat.JPEG;
     private int a, r, g, b; //Decoded ARGB color values for the background and erasing
 
     // Labels and values for stroke colour and width selection buttons
