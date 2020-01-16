@@ -320,8 +320,8 @@ public class TouchDrawActivity extends Activity {
             return;
         }
 
-       // mBitmap = Bitmap.createScaledBitmap(mBitmap, mTdView.mCanvas.getWidth(),
-         //       mTdView.mCanvas.getHeight(), false);
+        mBitmap = Bitmap.createScaledBitmap(mBitmap, mTdView.mCanvas.getWidth(),
+                mTdView.mCanvas.getHeight(), false);
         mTdView.mCanvas = new Canvas(mBitmap);
         mTdView.invalidate();
     }
@@ -338,14 +338,10 @@ public class TouchDrawActivity extends Activity {
         int origHeight = bitmap.getHeight();
         int newWidth, newHeight;
 
-        if (mScale < 100) {
-            newWidth = (int) (origWidth * (mScale / 100.0));
-            newHeight = (int)(origHeight * (mScale / 100.0));
-        } else {
             return bitmap;
-        }
 
-        return Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
+
+   //     return Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
     }
 
     @Override
