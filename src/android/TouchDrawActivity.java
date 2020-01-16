@@ -50,13 +50,13 @@ public class TouchDrawActivity extends Activity {
 
     private Paint mPaint;
     private int mStrokeWidth = 8;
-    private int mScale = 100;
+    private int mScale = 35;
     private Bitmap mBitmap;
     private TouchDrawView mTdView;
     private BackgroundImageType mBackgroundImageType = BackgroundImageType.COLOUR;
     private String mBackgroundColor = "#E9F5FF";
     private String mBackgroundImageUrl = "";
-    private Bitmap.CompressFormat mEncodingType = Bitmap.CompressFormat.JPEG;
+    private Bitmap.CompressFormat mEncodingType = Bitmap.CompressFormat.PNG;
     private int a, r, g, b; //Decoded ARGB color values for the background and erasing
 
     // Labels and values for stroke colour and width selection buttons
@@ -338,10 +338,14 @@ public class TouchDrawActivity extends Activity {
         int origHeight = bitmap.getHeight();
         int newWidth, newHeight;
 
+        if (mScale < 100) {
+            newWidth = (int) (origWidth * (mScale / 100.0));
+            newHeight = (int)(origHeight * (mScale / 100.0));
+        } else {
             return bitmap;
+        }
 
-
-   //     return Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
+        return Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
     }
 
     @Override
