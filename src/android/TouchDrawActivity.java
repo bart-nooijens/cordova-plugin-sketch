@@ -320,8 +320,8 @@ public class TouchDrawActivity extends Activity {
             return;
         }
 
-        mBitmap = Bitmap.createScaledBitmap(mBitmap, mTdView.mCanvas.getWidth(),
-                mTdView.mCanvas.getHeight(), false);
+       // mBitmap = Bitmap.createScaledBitmap(mBitmap, mTdView.mCanvas.getWidth(),
+         //       mTdView.mCanvas.getHeight(), false);
         mTdView.mCanvas = new Canvas(mBitmap);
         mTdView.invalidate();
     }
