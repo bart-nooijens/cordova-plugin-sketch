@@ -50,7 +50,7 @@ public class TouchDrawActivity extends Activity {
 
     private Paint mPaint;
     private int mStrokeWidth = 8;
-    private int mScale = 35;
+    private int mScale = 100;
     private Bitmap mBitmap;
     private TouchDrawView mTdView;
     private BackgroundImageType mBackgroundImageType = BackgroundImageType.COLOUR;
